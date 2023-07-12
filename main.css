@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    min-height: 100%;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #f6f6f6;
+}
+
+.container {
+    width: min(70%, 1140px);
+    margin: 0 auto;
+}
+
+.comments-container {
+    position: relative;
+    background-color: #eeeeee;
+    min-height: 100vh;
+}
+
+#originalPost {
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    padding: 1rem;
+    z-index: 1;
+    width: min(70%, 1140px);
+}
+
+.display-name {
+    font-weight: 100;
+    font-size: .85rem;
+    padding-bottom: .15rem;
+    display: inline-flex;
+}
+
+#originalPost .display-name {
+    font-size: 1.4rem;
+}
+
+.comment-text {
+    font-weight: 600;
+    font-size: 1.45rem;
+}
+
+#originalPost .comment-text {
+    font-size: 2rem;
+}
+
+#commentSection {
+    padding: 9rem 0 6rem; /* Creating space to allow first and last comment not to get lost */
+}
+
+#addPost {
+    position: fixed;
+    background-color: #fff;
+    bottom: 0;
+    width: min(70%, 1140px);
+    padding: 1rem;
+}
+
+#addPost .name-input {
+    width: 20%;
+    border: .1rem solid #aaa;
+    border-radius: 1rem;
+    padding: .5rem 1rem;
+}
+
+#addPost .comment-input {
+    width: 70%;
+    border: .1rem solid #aaa;
+    border-radius: 1rem;
+    padding: .5rem 1rem;
+}
+
+.comment-input {
+    width: 90%;
+    border: .1rem solid #aaa;
+    border-radius: 1rem;
+    padding: .2rem 1rem;
+}
+
+.btn {
+    border-style: none;
+    background-color: #fff;
+    color: #c2e0eb;
+    cursor: pointer;
+}
+
+.edit-button, .delete-button {
+    position: absolute;
+    top: 1rem;
+    font-size: .85rem;;
+    padding-top: 2.4px;
+    background-color: #f8f8f8;
+}
+.edit-button {
+    right: 4rem;
+}
+
+.delete-button {
+    right: 1rem;
+}
+
+.submit-button {
+    margin: 0 1rem;
+}
+
+.new-post {
+    background-color: #f8f8f8;
+    margin: 1rem 1rem 1rem 1rem;
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    align-items: flex-start
+}
+
+.user-icon {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    flex-shrink: 0;
+}
+
+.user-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
